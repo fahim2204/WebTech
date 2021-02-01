@@ -4,6 +4,7 @@
         <title>Registration Form</title>
     </head>
     <body>
+        <h1>Registration</h1>
         <form value="Registration"> 
             <table>
                 <tr>
@@ -21,6 +22,7 @@
                     <td>
                         <input type="email" id="email" name="email" placeholder="Email">
                     </td>
+                </tr>
                 <tr>
                     <td>
                         <label>User Name:</label>
@@ -68,10 +70,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="submit" value="SUBMIT">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
                     </td>
                     <td>
-                        <input type="reset" value="RESET">
                     </td>
                 </tr>
             </table>
