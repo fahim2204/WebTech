@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,7 +6,12 @@
     </head>
     <body>
         <br><br>
-        <form value="Login" action="control/results.php" method="post"> 
+
+        <?php
+            $validateName="";
+        ?>
+       
+        <form value="Login" action="<?php $_PHP_SELF ?>" method="post"> 
             <table>
                 <tr>
                     <td>
@@ -13,6 +19,12 @@
                     </td>
                     <td>
                         <input type="text" id="name" name="name" placeholder="Name">
+                        <?php  
+                            if(empty($_POST['name']) && $_SERVER["REQUEST_METHOD"]=="POST")
+                            {
+                                echo "Enter a Name";
+                            }
+                        ?>
                     </td>
                 </tr>
                 <tr>
@@ -36,3 +48,13 @@
         </form>
     </body>
 </html>
+
+<?php
+
+    if($_SERVER["REQUEST_METHOD"]=="POST")
+    {
+        echo "Name = ".$_GET['name']."<br>";
+
+    }
+    
+?>

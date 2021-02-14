@@ -68,16 +68,17 @@
                         <input type="date" id="dob" name="dob">
                     </td>
                 </tr>
+               
                 <tr>
-                    <td>
-                        <input type="submit" value="Submit">
-                        <input type="reset" value="Reset">
+                    <td> 
                     </td>
-                    <td>
+                    <td align="center"> 
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
                     </td>
                 </tr>
             </table>
-        
+            <a href="login.php">Already Registered?</a>
         </form>
     </body>
 </html>

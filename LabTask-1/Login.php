@@ -4,6 +4,7 @@
         <title>Login Form</title>
     </head>
     <body>
+        <h1>Login</h1>
         <form value="Login"> 
             <table>
                 <tr>
@@ -24,14 +25,22 @@
                 </tr>
                 <tr>
                     <td>
+                        <input type="checkbox" value="rem">
+                        <label for="rem">Remember me<label>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <input type="submit" value="SUBMIT">
                     </td>
                     <td>
-                        
+                        <a href="forgetpass.php">Forget Password?</a>
                     </td>
                 </tr>
             </table>
-        
+            <a href="registration.php">Register Here</a>
         </form>
     </body>
 </html>
