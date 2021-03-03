@@ -1,6 +1,6 @@
 <?php 
     include "control/registrationValidation.php"; 
-    include "dbConnect.php";
+    #include "dbConnect.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -87,7 +87,7 @@
                         <label>Date of Birth:</label>
                     </td>
                     <td>
-                        <input type="date" id="dob" name="dob">
+                        <input type="date" id="dob" name="dob" value="<?php echo $dob;?>>
                     </td>
                     <td>
                         <?php echo $validateDob; ?>

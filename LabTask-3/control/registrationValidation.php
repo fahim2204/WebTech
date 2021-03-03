@@ -1,5 +1,5 @@
 <?php  
-            
+            include("control/dbConnect.php");
             $name = $email = $userName = $password = $cpassword = "";
             $dbmsg = "";
             $validateName = $validateUserName = $validateEmail = $validateDob = $validateGender = "";
@@ -14,6 +14,8 @@
                 $userName = $_REQUEST["username"];
                 $password = $_REQUEST["password"];
                 $cpassword = $_REQUEST["cpassword"];
+                //$gender = $_REQUEST["gender"];
+                $dob = $_REQUEST["dob"];
 
                 if(empty($name) || empty($_REQUEST["gender"]) || empty($password) || empty($cpassword) || empty($userName))
                 {
@@ -54,7 +56,10 @@
                     $cpassword = "";
                 }
                 if($ValidateAllField == ""){
-                    
+                    $newConn = new db();
+                    $connObj = $newConn->OpenConn();
+                    $newConn->InsertUser($connObj, $name, $email, $userName, $password, $_REQUEST["gender"], $dob);
+                    $connObj = $newConn->CloseConn();
                     $dbmsg = "Data is Succesfully Inserted";
                 }
             }
