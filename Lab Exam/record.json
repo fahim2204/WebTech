@@ -1,0 +1,32 @@
+[
+    {
+        "Employee ID": "1",
+        "Employee Name": "Jhon",
+        "Email": "jhon@gmail.com",
+        "Date of Birth": "2021-03-18",
+        "Address": "Iceland",
+        "State": "Dhaka",
+        "Country": "Bangladesh",
+        "Phone": "0189455564"
+    },
+    {
+        "Employee ID": "2",
+        "Employee Name": "Brown",
+        "Email": "brown@ymail.com",
+        "Date of Birth": "2021-03-29",
+        "Address": "Dhaka",
+        "State": "Dhaka",
+        "Country": "Bangladesh",
+        "Phone": "01985455545"
+    },
+    {
+        "Employee ID": "3",
+        "Employee Name": "Shuvo",
+        "Email": "shuvo@hotmail.com",
+        "Date of Birth": "2021-03-09",
+        "Address": "Haluaghat",
+        "State": "Bangladesh",
+        "Country": "Bangladesh",
+        "Phone": "01960839453"
+    }
+]
